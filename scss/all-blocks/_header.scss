@@ -1,0 +1,59 @@
+.header {
+  padding-top: 73px;
+  background-color: $bg-color-E56;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+  }
+  &__image {
+    margin-right: 80px;
+  }
+  &__item {
+    margin-right: 40px;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: "Livvic";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $text-color-FFF;
+  }
+  &__button {
+    padding: 11px 33px;
+    background-color: $bg-color-E56;
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      font-family: "Livvic";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: $text-color-FFF;
+    }
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__item {
+    display: none;
+  }
+  .nav__button {
+    display: none;
+  }
+  .nav .menu {
+    display: block;
+  }
+}

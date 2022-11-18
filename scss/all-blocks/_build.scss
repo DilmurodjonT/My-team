@@ -1,0 +1,77 @@
+.build {
+  padding: 198px 0 140px 0;
+  background-color: $bg-color-F34;
+  position: relative;
+  &__content {
+    display: flex;
+    column-gap: 125px;
+  }
+  &__left {
+    max-width: 445px;
+  }
+  &__title {
+    font-family: "Livvic";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $text-color-FFF;
+  }
+  &__aside {
+    display: flex;
+    column-gap: 23px;
+    h5 {
+      font-family: "Livvic";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: $text-color-E7E;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: "Livvic";
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      color: $text-color-FFF;
+    }
+  }
+  &__position-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .build__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .build__left {
+    max-width: 455px;
+    text-align: center;
+  }
+  .build__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .build__aside {
+    max-width: 550px;
+  }
+  .build__position-3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .build__aside {
+    flex-direction: column;
+    align-items: center;
+  }
+  .build__aside {
+    max-width: 300px;
+    text-align: center;
+  }
+}

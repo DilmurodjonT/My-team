@@ -1,0 +1,76 @@
+.find {
+  padding: 82px 0 250px 0;
+  background-color: $bg-color-E56;
+  position: relative;
+  &__title {
+    display: flex;
+    column-gap: 150px;
+    align-items: flex-end;
+  }
+  &__text {
+    max-width: 635px;
+    h1 {
+      font-family: "Livvic";
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 100px;
+      color: $text-color-FFF;
+      span {
+        color: $text-color-E7E;
+      }
+    }
+  }
+  &__subject {
+    max-width: 410px;
+    padding-bottom: 60px;
+    p {
+      font-family: "Livvic";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: $text-color-FFF;
+    }
+  }
+  &__position-1 {
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+  }
+  &__position-2 {
+    position: absolute;
+    right: 17%;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .find__position-1 {
+    display: none;
+  }
+  .find__title {
+    align-items: center;
+    flex-direction: column;
+  }
+  .find__text {
+    text-align: center;
+  }
+  .find__text h1 {
+    font-size: 85px;
+    line-height: 85px;
+  }
+  .find__subject {
+    max-width: 505px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .find__position-2 {
+    right: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .find__text h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
